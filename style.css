@@ -1,0 +1,53 @@
+body{
+    background-color:black;
+}
+
+.content {
+    width: 90%;
+	margin: 0 auto;
+}
+.two {
+overflow: hidden;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+line-height: 16px; 
+height: 32px; 
+}
+@media screen and (max-width: 922px) {
+    .content {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .content {
+        width: 100%;
+    }
+    img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 568px) {
+    .content {
+        width: 100%;
+    }
+	img{
+    width: 100%;
+	}
+}
+@media screen and (max-width: 400px) {
+    .content {
+        width: 100%;
+    }
+	img{
+    width: 100%;
+	}
+}
+/* .hideX {
+    overflow:hidden;
+    overflow:hidden;
+} */
+
+.right {
+    width: 320px;
+    float: right;
+}

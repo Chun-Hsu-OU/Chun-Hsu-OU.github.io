@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+    <head>
+        <title>VoiceTube</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- css檔 -->
+        <link rel="stylesheet" href="vedio_style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				<a class="navbar-brand" href="home.html">VoiceTube</a>
+                </div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">精選頻道<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+							<li><a href="#">Page 1-1</a></li>
+							<li><a href="#">Page 1-2</a></li>
+							<li><a href="#">Page 1-3</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">程度分級<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+							<li><a href="#">Page 1-1</a></li>
+							<li><a href="#">Page 1-2</a></li>
+							<li><a href="#">Page 1-3</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">聽力口說<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+							<li><a href="#">Page 1-1</a></li>
+							<li><a href="#">Page 1-2</a></li>
+							<li><a href="#">Page 1-3</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">社群 <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+							<li><a href="#">Page 1-1</a></li>
+							<li><a href="#">Page 1-2</a></li>
+							<li><a href="#">Page 1-3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+            </div>
+        </nav>
+
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div class="center ">
+		<script src="vedio.js"></script>
+        <div id="player" class="film"></div>
+		<div class="subtitle">
+			<input type="button" value="英文" onclick="Generate_caption_en()" class="buttongreen">
+			<input type="button" value="中英對照" onclick="Generate_caption_ch()" class="buttonred">
+			<br>
+            <script src="caption.js" ></script>
+            <div id="AnswerBox">
+				<script>
+				Generate_caption();
+				</script>
+			</div>
+        </div>
+    </div>
+  </body>
+  <script>change_caption_color();</script>
+</html>
